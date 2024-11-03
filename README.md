@@ -105,4 +105,11 @@ Pastikan telah menginstal `kafka-python` sebelum melanjutkan.
 2. **Jalankan consumer di terminal baru:**
    ```$SPARK_HOME/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.1 /Users/kessyanabrtsianipar/Documents/Collage/5th/big\ data/sensor-suhu/consumer.py```
 
-## Hasil
+## Hasil 
+1. **Consumer-80.py:** 
+![800](output/consumer-80.png)
+
+2. **Consumer-semua.py:** 
+![semuaa](output/consumer-semuaa.png)
+
+
