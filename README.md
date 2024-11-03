@@ -31,16 +31,27 @@ Proyek ini adalah contoh sederhana untuk menjalankan Apache Kafka dengan integra
    bin/zookeeper-server-start.sh config/zookeeper.properties
    ```
 
+
+![zookeeper](output/2.png)
+
+
 6. **Start Kafka Server**  
    Open a new terminal, navigate to the Kafka directory, and start the Kafka server:
    ```bash
    bin/kafka-server-start.sh config/server.properties
    ```
 
+
+
+   ![kafkanim](output/1.png)
+
 7. **Create a Kafka Topic (sensor-suhu)**
    ```bash
    bin/kafka-topics.sh --create --topic sensor-suhu --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
    ```
+
+
+   ![topic](output/3.png)
 
 8. **Install Kafka-Python Library**
    ```bash
@@ -92,8 +103,6 @@ Pastikan telah menginstal `kafka-python` sebelum melanjutkan.
    ```
 
 2. **Jalankan consumer di terminal baru:**
-   ```bash
-   $SPARK_HOME/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.1 /path/to/consumer.py
-   ```
+   ```$SPARK_HOME/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.1 /Users/kessyanabrtsianipar/Documents/Collage/5th/big\ data/sensor-suhu/consumer.py```
 
 ## Hasil
